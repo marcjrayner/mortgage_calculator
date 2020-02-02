@@ -8,6 +8,7 @@ function DisplayToggle () {
          <label><input type="radio" id="monthlyCost" />Monthly Cost</label>
       </form>
     </div>
+
   )
 };
 
