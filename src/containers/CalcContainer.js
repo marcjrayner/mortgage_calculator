@@ -1,8 +1,12 @@
 import React from 'react'
+import DisplayToggle from '../components/DisplayToggle'
 
 function CalcContainer () {
   return(
-    <h1>calc container</h1>
+    <>
+      <h1>Mortgage Calculator</h1>
+      <DisplayToggle></DisplayToggle>
+    </>
   )
 };
 
