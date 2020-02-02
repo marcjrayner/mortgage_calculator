@@ -8,7 +8,6 @@ class MaxLoanGenerator extends Component {
 
      }
      this.handleSalaryChange = this.handleSalaryChange.bind(this)
-
   }
 
   handleSalaryChange(event) {
@@ -20,7 +19,7 @@ class MaxLoanGenerator extends Component {
       <div className="displayToggle">
         <h3>Calclulate Max Loan: </h3>
         <label>Salary: <input type="number" value={this.props.salary} onChange={this.handleSalaryChange}/></label>
-        <p>Your Max Loan: £{this.props.salary * 3.5}</p>
+        <p>Your Max Loan: £{this.props.maxLoan}</p>
         <hr></hr>
       </div>
     )
