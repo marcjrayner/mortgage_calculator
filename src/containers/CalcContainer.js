@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import DisplayToggle from '../components/DisplayToggle'
 import DataEntryForm from '../components/DataEntryForm'
-import ResultsDisplay from '../components/ResultsDisplay'
 import MaxLoanGenerator from '../components/MaxLoanGenerator'
 
 
@@ -42,8 +41,9 @@ class CalcContainer extends Component {
           onSalaryChange={this.handleMaxLoanSalaryChange}
         />
         <DisplayToggle/>
-        <DataEntryForm/>
-        <ResultsDisplay/>
+        <DataEntryForm
+          maxLoan={this.state.maxLoan}
+        />
       </>
     )
   }
